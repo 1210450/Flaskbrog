@@ -5,10 +5,14 @@
     <title>Flaskbrog</title>
 </head>
 <body>
+    {% extends "base.html"%} {% block content %}
     <h1>Flask brog</h1>
+    <p><a href="/create" role="button">新規登録</a></p>
+    <article>
     <h2>ホーム画面</h2>
-
+    </article>
     <a href="{{url_for('article1')}}">記事1へ</a>
     <a href="{{url_for('article2')}}">記事2へ</a>
+    {% endblock %}
 </body>
 </html>
